@@ -92,7 +92,7 @@ def box_test(N0, run, Pl, Pr):
     1 means particle in left side
     0 means particle not in left side (right side)
     
-    all particles, set as 1 (all starting in the left side):
+    all initial particles are set as 1 (all starting in the left side):
     """
     
     N_arr = np.ones(N0)
@@ -112,7 +112,7 @@ def box_test(N0, run, Pl, Pr):
         if the particle is 0 (in the right), it will have a Pr probability 
         of changing side.
         
-        a random number between 0 and 1 is picked at random, and checked if it
+        a random number between 0 and 1 is picked and checked if it
         is smaller than the imposed probability. If it is, the particle will move.
         """
         
